@@ -1,0 +1,609 @@
+/*  google fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,300&family=Poppins:wght@300;400;700&family=Raleway:wght@300;400;700&display=swap');
+
+  /* ------------------------------------------------------------- */
+/* root  */
+/* ------------------------------------------------------------- */
+
+:root{
+    --fc_cl_green:#009970;
+    --fc_fade_white:rgb(238, 238, 238);
+    --fc_dark_grey: rgb(68, 68, 68);
+    --fc_fade_grey: rgb(132, 132, 132);
+
+    --ff_open: 'Open Sans', sans-serif;
+    --ff_pop: 'Poppins', sans-serif;
+    --ff_rale: 'Raleway', sans-serif;
+
+    --fs_14: 14px;
+    --fs_16: 16px;
+    --fs_18: 18px;
+    --fs_24: 24px;
+    --fs_28: 28px;
+    --fs_35: 35px;
+    --fs_48: 48px;
+
+    --fw_300: 300;
+    --fw_400: 400;
+    --fw_700: 700;
+}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+*{
+  scroll-padding-top: 55px;
+}
+body {
+    font-family: var(--ff_open);
+    background-color: #444444 !important ;
+    width: 100vw;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: visible;
+
+    /* padding: 0 50px; */
+  }
+  
+  a {
+    /* color: #009970; */
+    text-decoration: none !important;
+  }
+  
+  a:hover {
+    color: #00cc95;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--ff_rale) !important;
+  }
+
+  h1{
+    font-size: var(--fs_48);
+  }
+  h2{
+    font-size: var(--fs_28);
+  }
+  h3{
+    font-size: var(--fs_24) ;
+  }
+  
+  .btnn{
+    padding: 0.5rem 1rem !important;
+  }
+
+  .header_grn_bor{
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    border-bottom: 3px  solid var(--fc_cl_green);
+    font-family: var(--ff_rale);
+    font-weight: 700;
+  }
+  .p_grn_bor{
+    font-family: var(--ff_open);
+    color: var(--fc_dark_grey);
+  }
+    
+
+/*--------------------------------------------------------------
+# header
+--------------------------------------------------------------*/
+
+header{
+  width: 100vw;
+  top: 1.5rem !important;
+}
+.navbar{
+}
+
+
+.navbar .navbar-brand{
+    font-size: 26px;
+    font-weight: var(--fw_700);
+    font-family: var(--ff_pop);
+    background-color: var(--fc_cl_green) !important;
+}
+
+.navbar-nav a{
+    font-size: var(--fs_14);
+    font-family: var(--ff_pop) !important;
+    font-weight: var(--fw_400);
+    text-transform: uppercase;
+}
+
+.getstarted{
+    background-color: var(--fc_cl_green) !important;
+}
+
+/*--------------------------------------------------------------
+# js header
+--------------------------------------------------------------*/
+
+.js_header{
+  top: 0 !important;
+  background-color: #fff;
+  box-shadow: 0 5px 5px 0 var(--fc_fade_grey);
+}
+
+/*--------------------------------------------------------------
+# home
+--------------------------------------------------------------*/
+
+#home{
+    height: 80vh;
+    width: 100%;
+    background: url("./img/hero-bg.jpg") center center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    position: relative;
+}
+
+#home::before{
+    content: '';
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.492);
+
+    position: absolute;
+}
+
+#home h1{
+    font-family: var(--ff_rale) !important;
+    font-weight: var(--fw_700);
+    font-size: var(--fs_48);
+}
+#home h2{
+    font-size: var(--fs_16);
+    color: var(--fade_white);
+}
+
+.home_bot_btn:hover{
+    background-color: var(--fc_cl_green) !important;
+    color: #fff !important;
+}
+
+
+
+/*--------------------------------------------------------------
+# client
+--------------------------------------------------------------*/
+#client {
+  background-color: #f1f1f4 ;
+}
+
+#client img {
+  width: 40%;
+}
+
+#client img:hover {
+  transition: all 0.4s ease-in-out;
+  transform: scale(1.3);
+  
+}
+
+/*--------------------------------------------------------------
+# about
+--------------------------------------------------------------*/
+
+#about h1 {
+  font-weight: var(--fw_700);
+  font-size: var(--fs_48);
+  line-height: 60px;
+}
+
+#about h3 {
+  font-weight: 500;
+  line-height: 32px;
+  color: var(--fc_dark_grey);
+  font-size: var(--fs_24);
+}
+
+#about p{
+  font-family: var(--ff_open);
+  color: var(--fc_dark_grey);
+}
+
+#about ul i {
+  color: #009970;
+  margin-right: var(--fs_14);
+}
+
+/*--------------------------------------------------------------
+# counts
+--------------------------------------------------------------*/
+
+#counts {
+  background: var(--fc_cl_green);
+}
+
+#counts span {
+  font-size: var(--fs_35);
+  font-weight: var(--fw_700);
+}
+
+#counts p {
+  font-weight: var(--fw_400);
+  font-family: var(--ff_rale);
+}
+
+/*--------------------------------------------------------------
+# why_us
+--------------------------------------------------------------*/
+
+#Why_us h1{
+  font-family: var(--ff_rale);
+  font-weight: var(--fw_700);
+}
+
+#Why_us h5{
+  font-family: var(--ff_rale);
+  font-weight: var(--fw_700);
+}
+
+#Why_us p{
+  font-family: var(--ff_open);
+}
+
+/*--------------------------------------------------------------*/
+
+
+#Why_us_top{
+  background-color: var(--fc_cl_green);
+}
+
+#Why_us_top button{
+  background-color: #00cc9648;
+  width: 160px;
+  height: 40px;
+  color: #fff;
+}
+
+#Why_us_top button:hover{
+  background-color: #fff;
+  color: black;
+}
+
+/*--------------------------------------------------------------*/
+#Why_us_bot .card{
+  height: clamp(265px,30vh,310px);
+}
+
+#Why_us_bot .card p{
+  color: var(--fc_fade_grey);
+}
+
+/*--------------------------------------------------------------
+# call_action
+--------------------------------------------------------------*/
+
+
+
+#call_action {
+  background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.7)), url("./img/cta-bg.jpg") fixed center center;
+  background-size: cover;
+}
+
+#call_action h3 {
+  font-size: var(--fs_28);
+  font-weight: var(--fw_700);
+  font-family: var(--ff_rale);
+}
+
+#call_action p {
+  font-family: var(--ff_pop);
+}
+
+.cta_btn:hover{
+  background-color: var(--fc_cl_green) !important;
+  color: #fff !important;
+}
+
+/*--------------------------------------------------------------
+# services
+--------------------------------------------------------------*/
+#services{
+  background-color: var(--fc_fade_white) !important;
+}
+#services h1 , #services h4{
+  font-family: var(--ff_rale);
+  font-weight: var(--fw_700);
+}
+
+/*--------------------------------------------------------------*/
+#services_bot .card{
+  height: clamp(265px,30vh,310px);
+}
+
+#services_bot .card p{
+  color: var(--fc_fade_grey);
+}
+
+#services_bot .card:hover  h4{
+  color: var(--fc_cl_green);
+}
+#services_bot .card:hover .font_awe_bg{
+  color: #fff;
+  background-color: var(--fc_cl_green);
+
+}
+
+/*--------------------------------------------------------------
+# temp_car
+--------------------------------------------------------------*/
+#temp_car{
+  min-height: 20rem;
+  background: url(./img/demo2-image-01.jpg) fixed no-repeat; 
+  background-position: center;
+  background-size: cover;
+}
+
+ #temp_car .carousel-item{
+    backdrop-filter: blur(50px);
+  }
+
+/*--------------------------------------------------------------
+# Portfolio
+--------------------------------------------------------------*/
+
+#tabbbs .nav button{
+  background-color: #fff;
+  color: black;
+}
+
+#tabbbs .nav button.active{
+  background-color: var(--fc_cl_green);
+  color: #fff;
+}
+
+.portfolio-wrap{
+  position: relative;
+  color: #fff;
+  font-family: var(--ff_rale);
+  overflow: hidden;
+}
+
+.portfolio-wrap img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all ease-in-out 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-info{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #444444b9;
+
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  display: grid;
+  justify-content: center;
+  align-content: flex-end;
+  gap: 20px;
+  padding: 20px;
+
+  opacity: 0;
+}
+
+.portfolio-wrap:hover .portfolio-info{
+  opacity: 1;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+  color: #00cc95;
+}
+
+.portfolio-wrap:hover img {
+  transform: scale(1.2);
+}
+
+
+
+/*--------------------------------------------------------------
+# testimonials
+--------------------------------------------------------------*/
+#testimonials{
+  background-color: var(--fc_fade_white);
+}
+
+#testimonials .owl-carousel .item{
+display: grid;
+justify-content: center !important;
+}
+
+
+#testimonials .owl-carousel .card{
+  padding: 30px;
+  min-width: 9rem;
+  border: 2px solid var(--fc_cl_green);  
+
+  align-items: center;
+}
+
+#testimonials .owl-carousel .card p{
+  font-style: italic;
+  font-family: var(--ff_open);
+  color: var(--fc_dark_grey);
+  min-height: 6rem;
+}
+
+#testimonials .owl-carousel .card img{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+#testimonials .owl-carousel .owl-dot span{
+  background-color: var(--fc_dark_grey);
+}
+
+#testimonials .owl-carousel .owl-dot.active span{
+  background-color: var(--fc_cl_green);
+  width: 30px;
+}
+
+#testimonials .owl-carousel .card i{
+  color: var(--fc_cl_green);
+  padding: 0 0.4rem;
+}
+
+/*--------------------------------------------------------------
+# team
+--------------------------------------------------------------*/
+
+#team #team_rgt{
+  background-color: var(--fc_cl_green) !important;
+}
+
+
+
+#team_lft .card img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid var(--fc_cl_green);
+}
+
+#team_lft .card h4{
+font-weight: var(--fw_700);}
+
+#team_lft .card .card-body span{
+  font-family: var(--ff_pop);
+  color: #087c5d;
+}
+
+#team_lft .card p{
+  font-family: var(--ff_open);
+}
+
+
+
+
+/*--------------------------------------------------------------
+# contact
+--------------------------------------------------------------*/
+
+#contact .cnt_img_map{
+  height: 23rem !important;
+}
+
+ #contact .card-body{
+    background-color: var(--fc_cl_green);
+    color: #fff;
+    padding: 2rem;
+    height: 23rem !important;
+ }
+
+ #contact iframe{
+  height: 23rem !important;
+ }
+
+ #cnt_add div{
+    margin: 2rem 0;
+
+ }
+
+ #contact .card-body button{
+  width: 150px;
+}
+
+
+/*--------------------------------------------------------------
+# footer
+--------------------------------------------------------------*/
+
+#footer{
+  background-color: var(--fc_cl_green);
+}
+
+#footer p{
+  font-family: var(--ff_open);
+}
+
+#footer small{
+  font-size: var(--fs_18) !important;
+}
+
+#foot_subs{
+  top: 10%;
+  right: 1%;
+
+  background-color: var(--fc_cl_green);
+}
+
+.footer_links li a{
+  color: var(--fc_fade_white) !important;
+}
+/*--------------------------------------------------------------
+# icons
+--------------------------------------------------------------*/
+.font_awe_cl{
+  color: var(--fc_cl_green);
+  font-size: 2.5rem;}
+
+.font_awe_bg{
+  width: 4rem;
+  height: 4rem;
+  color: var(--fc_cl_green);
+  font-size: 2.5rem;
+  border: 1px solid var(--fc_cl_green);
+  border-radius: 50%;
+  margin: 0 auto;
+
+  display: grid;
+  place-content: center;
+}
+
+
+.ft_social-links i{
+  font-size: 1.5rem;
+  color: var(--fc_cl_green);
+}
+
+/*--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# media 1
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------*/
+
+@media (max-width:768px){
+
+  header{
+    top: 0rem !important;
+    background-color: #fff;
+    }
+  
+
+
+
+/*--------------------------------------------------------------
+# about
+--------------------------------------------------------------*/
+
+  #about h1 {
+    font-size: var(--fs_28);
+    line-height: 40px;
+  }
+
+  #about h3 {
+    font-size: var(--fs_18); 
+  }
+
+  #about p{
+    font-size: var(--fs_14); 
+  }  
+  
+
+}
